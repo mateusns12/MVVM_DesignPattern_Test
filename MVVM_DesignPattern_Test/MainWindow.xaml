@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVM_DesignPattern_Test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="450" Width="450">
+    <Grid Margin="10">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+            <Label x:Name="Material">Material</Label>
+            <TextBox x:Name="TextInput" 
+                     Width="270" Height="25"
+                     Text="{Binding ModelChartID.Material,UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True}"
+                     VerticalContentAlignment="Center">                
+            </TextBox>
+            <Button x:Name="Button" Width="90" Height="25"
+                    Command="{Binding UpdateCommand}">
+                Submit
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>

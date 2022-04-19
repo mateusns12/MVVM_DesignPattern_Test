@@ -1,5 +1,4 @@
-﻿using MVVM_DesignPattern_Test.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,20 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MVVM_DesignPattern_Test
+namespace MVVM_DesignPattern_Test.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica interna para ChartIDView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ChartIDView : Window
     {
-        public MainWindow()
+        public ChartIDView()
         {
             InitializeComponent();
-            DataContext = new ViewModelChartID();
         }
     }
 }
